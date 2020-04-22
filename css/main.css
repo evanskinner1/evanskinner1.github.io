@@ -6,6 +6,7 @@ body {
 header, nav, main, footer {
     margin: 1.25rem auto;
     max-width:760px;
+    text-align: center;
     
 }
 
@@ -14,8 +15,9 @@ header, footer {
     color: #fff;
     text-align: center;
     padding: 1.5rem;
-
 }
+
+
 
 a {
     color: black;
