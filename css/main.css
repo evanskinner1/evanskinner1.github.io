@@ -10,6 +10,8 @@ header, nav, main, footer {
     
 }
 
+h2 {border-bottom: groove;}
+
 header, footer {
     background-color: darkgreen;
     color: #fff;
