@@ -1,18 +1,24 @@
 body {
-    font-size:18px;
+    font-size: 18px;
     line-height: 1.5;
 }
 
-header, nav, main, footer {
+header,
+nav,
+main,
+footer {
     margin: 1.25rem auto;
-    max-width:760px;
-    
-    
+    max-width: 760px;
+
+
 }
 
-h2 {border-bottom: groove;}
+h2 {
+    border-bottom: groove;
+}
 
-header, footer {
+header,
+footer {
     background-color: darkgreen;
     color: #fff;
     text-align: center;
