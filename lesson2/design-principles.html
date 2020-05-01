@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description" content="My assignment">
+    <title>Design Principles Document</title>
+    <meta name="description" content="Grid Layout">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preload" href="/css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
@@ -19,21 +19,21 @@
         <h2>Evan Skinner</h2>
     </header>
 
-    <main>
-        <section1>
-            <h3>Proximity</h3>
-            <p1>Idaho <br />
-                <a href="https://www.idaho.gov/">idaho.gov</a></p1><br />
+    <div class="container">
+
+        <div class="grid-item">
+            <h3>Proimity</h3>
+            <p>Idaho <br /><a href="https://www.idaho.gov/">idaho.gov</a></p>
 
             <img src="images/idaho.png" alt="Screenshot of Idaho.gov Website">
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into electronic e</p>
-        </section1>
 
-        <section2>
-           <h3>Alignment</h3>
+        </div>
+        <div class="grid-item">
+            <h3>Alignment</h3>
             <p1> Pinterest <br />
                 <a href="https://www.pinterest.com/">pinterest.com</a></p1> <br />
 
@@ -42,8 +42,9 @@
                 industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into electronic e</p>
-        </section2>
-        <section3>
+
+        </div>
+        <div class="grid-item">
             <h3>Contrast</h3>
             <p1> Hewlett Packard <br />
                 <a href="https://www8.hp.com/us/en/home.html">hp.com</a></p1><br />
@@ -53,10 +54,15 @@
                 industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries, but also the leap into electronic e</p>
-        </section3>
+
+        </div>
 
 
-    </main>
+
+
+
+
+    </div>
 
     <footer>
         &copy; <script src="js/dynamicyear.js"></script>
