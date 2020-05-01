@@ -1,0 +1,31 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+header, footer {
+    background-color: darkgreen;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+@media only screen and (min-width: 37.5em){
+    main {grid-template-columns: 1fr 1fr 1fr;}
+
+    img:nth-child(8) 
+}
+
+@media only screen and (min-width: 60em) {
+
+main {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+
+
+

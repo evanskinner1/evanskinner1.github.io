@@ -9,9 +9,13 @@ main,
 footer {
     margin: 1.25rem auto;
     max-width: 760px;
+}
 
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
 
 }
+
 
 h2 {
     border-bottom: groove;
