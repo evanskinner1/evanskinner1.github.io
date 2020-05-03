@@ -14,8 +14,8 @@ footer {
 
 .container {
     display: grid;
-
-
+    width:60%;
+    margin: 3rem auto;
 }
 
 .grid-item {
@@ -31,6 +31,7 @@ img {
 @media (min-width:600px) {
     .container {
         grid-template-columns: 1fr 1fr;
+        
     }
 }
 
