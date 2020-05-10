@@ -1,0 +1,42 @@
+nav {
+	background-color: grey;
+}
+
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	
+		nav ul { display: flex; }
+		nav ul li { flex: 1 1 100%; }
+	
+	nav a {
+		font-size: 1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+	article:nth-child(3) {
+		grid-column: span 2;
+	}
+	main picture {
+		display: block;
+	}
+	main picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	nav a {
+		font-size: 1.1rem;
+	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	article:nth-child(3) {
+		grid-column: span 1;
+	}
+}
