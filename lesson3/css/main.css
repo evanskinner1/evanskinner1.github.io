@@ -17,6 +17,7 @@ body {
 	border: 5px solid Black;
 	display: inline-block;
 	min-width: 1rem;
+	padding:20px;
 }
 
 header {
@@ -100,7 +101,9 @@ main img {
 p, ol{
 	font-family: 'Assistant', sans-serif;
 	font-size: 18px;
+
 }
+
 
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
