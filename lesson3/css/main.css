@@ -1,26 +1,135 @@
-nav {
-	background-color: grey;
+body {
+	font-size: 18px;
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+	margin-right: 1rem;
+	margin-left: 1rem;
+	align-items: center;
+}
+
+.container {
+	display: grid;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.box1 {
+	border: 5px solid Black;
+	display: inline-block;
+	min-width: 1rem;
+}
+
+header {
+	background-color: #045ea8;
+	color: #fff;
+	text-align: center;
+
+}
+
+footer {
+	background-color: #455b6d;
+	color: #fff;
+	text-align: center;
+	padding: 1.5rem;
+}
+
+nav,
+a {
+	/*background-color: #c4c4c4;*/
+	background-color: #ff9409;
+	text-decoration: none;
+	color: Black;
+	font-weight: bold;
+	padding: .02px;
+
+}
+
+img {
+	width: 80px;
+	height: auto;
+	vertical-align: middle;
+}
+
+div img {
+	width: 180px;
+	height: auto;
+
 }
 
 
+.box {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 1rem;
+
+}
+
+.color1 {
+	background-color: #045ea8;
+	border: 2px solid black;
+
+}
+
+.color2 {
+	background: #ff9409;
+	border: 2px solid black;
+}
+
+.color3 {
+	background: #FFFFFF;
+	border: 2px solid black;
+}
+
+.color4 {
+	background: #000000;
+	border: 2px solid black;
+}
+
+.color5 {
+	background: #455b6d;
+	border: 2px solid black;
+}
+
+
+main img {
+	width: 300px;
+	height: auto;
+}
+
+p, ol{
+	font-family: 'Assistant', sans-serif;
+	font-size: 18px;
+}
+
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
-	
-		nav ul { display: flex; }
-		nav ul li { flex: 1 1 100%; }
-	
+
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		flex: 1 1 100%;
+	}
+
 	nav a {
 		font-size: 1rem;
 	}
+
 	main {
 		grid-template-columns: 1fr 1fr;
+
 	}
+
 	article:nth-child(3) {
 		grid-column: span 2;
 	}
+
 	main picture {
 		display: block;
 	}
+
 	main picture img {
 		width: 100%;
 		height: auto;
@@ -33,10 +142,13 @@ nav {
 	nav a {
 		font-size: 1.1rem;
 	}
+
 	main {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+		padding: 1rem;
+
+
 	}
-	article:nth-child(3) {
-		grid-column: span 1;
-	}
+
+
 }
