@@ -1,0 +1,40 @@
+
+
+
+
+  /* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .wrapper, li, .tiles{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        background-color: #2196F3;
+        border-style: solid;
+        padding: 10px;
+      }
+    
+      section{
+    
+        border-style: solid;
+        margin: 1rem;
+      }
+    }
+
+
+
+    /* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .wrapper, li, .tiles{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        background-color: #2196F3;
+        border-style: solid;
+        padding: 10px;
+      }
+    
+      section{
+    
+        border-style: solid;
+        margin: 1rem;
+      }
+    }
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Weather</title>
+    <meta name="description" content="Grid Layout">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+</head>
+
+
+<body>
+    <header>
+        <picture>
+            <img src="images/1.png" alt="Weather Icon">
+        </picture>
+        <section class="headings">
+            <h1>24-7 Weather</h1>
+            <div class="a">Weather Anytime, Anywhere!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../index.html"> Portal</a></li>
+            <li><a href="preston.html"> Preston</a></li>
+            <li><a href="#"> Soda Springs</a></li>
+            <li><a href="#"> Fish Haven</a></li>
+            <li><a href="#"> Storm Center</a></li>
+            <li><a href="#"> Gallery</a></li>
+        </ul>
+    </nav>
+    <script src="js/toggleMenu.js"></script>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="container">
+            <div class="box">
+                <p>Hero image/weather summery</p>
+            </div>
+            <div class="box">
+                <p>5 Day Forecast</p>
+            </div>
+            <div class="box">
+                <p>Article</p>
+            </div>
+            <div class="box">
+                <p>Contact Information</p>
+                <script src="js/currentdate.js"></script>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; <script src="js/dynamicyear.js"></script> | 24-7 Weather | All Rights Reserved | <span id="currentdate"></span>
+        <script src="js/currentdate.js"></script>
+    </footer>
+</body>
+
+</html>
