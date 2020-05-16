@@ -10,7 +10,7 @@ body {
 header {
 	background-color: #045ea8;
 	color: #fff;
-	display:flex;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 
@@ -32,7 +32,12 @@ h2 {
 }
 
 header img {
-	width:80px;
+	width: 80px;
+	height: auto;
+}
+
+p {
+	font-family: 'Assistant', sans-serif;
 }
 
 /* Small/Phone View ***************/
@@ -64,18 +69,14 @@ nav {
 	font-weight: bold;
 }
 
-.navigation a:hover {
-	color: black;
-	background-color: #ff9409;
-}
-
 .container {
 	text-align: center;
 
 }
+
 .box {
-	border-color: red;
-	border-style: solid;
+	border-style: solid black;
+	border: 1px solid #000;
 	width: auto;
 	height: 50px;
 	margin: 1rem;
@@ -91,14 +92,13 @@ nav {
 	header img {
 		width: 100%;
 	}
-	
+
 	.navigation {
 		display: flex;
 	}
 
 	.navigation li {
 		display: block;
-		/* change state in small view */
 		flex: 1 1 auto;
 	}
 
@@ -108,6 +108,12 @@ nav {
 
 	.navigation li:first-child {
 		display: none;
+	}
+
+	.navigation a:hover {
+		background-color: #455b6d;
+		
+		color: white;
 	}
 
 	footer {
@@ -120,28 +126,13 @@ nav {
 	.container {
 		text-align: center;
 	}
-/*
-	.box {
-		display: inline-block;
-		min-width: 400px;
-		max-width: 800px;
-		text-align: center;
-		border-color: black;
-		border-style: solid;
-		height: 50px;
-		margin: 1rem;
-
-	}
-*/
 
 	.box {
 		display: block;
 		margin: 10px auto;
-		border: 1px dashed #000;
+		border: 1px solid #000;
 		padding: 15px;
-		background-color: #eee;
-		color: #444;
-		font-style: italic;
+		color: black;
 		max-width: 800px;
 	}
 }
