@@ -1,0 +1,247 @@
+body {
+	font-size: 18px;
+	line-height: 1;
+	font-family: 'Montserrat', sans-serif;
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+header {
+	background-color: #045ea8;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+footer {
+	background-color: #455b6d;
+	color: #fff;
+	text-align: center;
+	padding: 1.5rem;
+}
+
+nav {
+	background-color: #ff9409;
+}
+
+h2 {
+	text-align: center;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+p {
+	font-family: 'Assistant', sans-serif;
+}
+
+div:not(#banner) {
+	max-width: 960px;
+	margin: auto;
+}
+noscript p {
+	background-color: rgb(221, 61, 61);
+	padding: 1rem;
+	text-align: center;
+	font-weight: bolder;
+}
+
+nav {
+	margin: 0 auto;
+
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;
+	color: Black;
+	font-weight: bold;
+}
+
+
+.responsive li {
+	display: block;
+}
+body#preston #active {
+	background-color: #455b6d;
+		color: white;
+}
+
+@media only screen and (max-width: 600px) {
+	.fiveday {
+		display: none;
+	}
+
+	.contactinfo img {
+		display: none;
+	}
+
+	.containerone {
+		position: relative;
+		text-align: center;
+		padding-bottom: 1.5em;
+	}
+
+	.containerone img {
+		width: 100%;
+	}
+
+	.summary {
+
+		position: absolute;
+		top: 8px;
+		left: 16px;
+		padding: .75em;
+		background-color: rgb(190, 187, 187, 0.6);
+		font-weight: bold;
+	}
+
+	.forcast {
+		display: none;
+	}
+	.article {
+		border-style: solid;
+		padding: 1rem;
+		overflow-wrap: break-word;
+	}
+
+	.articleimage img {
+		width: 90%;
+		padding:1rem;
+	}
+
+	.contimg {
+		display: none;
+	}
+
+	.contactinfo {
+		text-align: left;
+		background-color: lightgray;
+		padding: 1rem;
+	}
+
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	header img {
+		width: 100%;
+	}
+
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.navigation a:hover {
+		background-color: #455b6d;
+		color: white;
+	}
+
+	footer {
+		display: block;
+		text-align: center;
+		margin: 10px auto;
+		max-width: 1000px;
+	}
+
+	.containerone {
+		position: relative;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	.containerone img {
+		width: 100%;
+	}
+
+	.summary {
+
+		position: absolute;
+		top: 15px;
+		left: 15px;
+		padding: .7em;
+		background-color: rgb(190, 187, 187, 0.6);
+		font-weight: bold;
+	}
+
+	.forcast {
+		padding: 1em;
+		text-align: center;
+	}
+
+	.forcast img {
+		width: 100%;
+	}
+
+	.article {
+		border-style: solid;
+		padding: 1rem;
+		
+	}
+
+	.articleimage img {
+		float: right;
+		width: 40%;
+		padding: 1rem;
+	}
+
+	.contact {
+		background-color: lightgrey;
+		padding-left: 1em;
+		padding-right: 1em;
+		padding-bottom: 1em;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+
+	.contactinfo {
+		grid-column: 2/3;
+		grid-row: 1/2;
+		padding: 2rem;
+		text-align: center;
+		margin: auto;
+	}
+
+	.contimg {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		max-width: 100%;
+		max-height: 100%;
+		padding-top: 1em;
+	}
+	
+
+}

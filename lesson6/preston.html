@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Weather</title>
+    <meta name="description" content="Grid Layout">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
+    <link rel="preload" href="/css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+</head>
+
+
+<body id="preston">
+    <div id="banner"></div>
+    <noscript>
+        <p>JavaScript is needed to enhance features of this page. Please enable JavaScript.</p>
+    </noscript>
+    <header>
+        <picture>
+            <img src="images/1.png" alt="Weather Icon">
+        </picture>
+        <section class="headings">
+            <h1>24-7 Weather</h1>
+            <div class="a">Weather Anytime, Anywhere!</div>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a  href="../index.html" title="Return to Portal"> Portal</a></li>
+            <li><a  id="active" href="preston.html" title="Go to the Preston page"> Preston</a></li>
+            <li><a  href="#"> Soda Springs</a></li>
+            <li><a  href="#"> Fish Haven</a></li>
+            <li><a  href="#"> Storm Center</a></li>
+            <li><a  href="#"> Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h2>Preston Idaho</h2>
+
+        <div class="containerone">
+            <img src="images/hero.PNG" alt="blue sky and sunshine">
+            <div class="summary">
+                <h4>Weather Summary</h4>
+                <p>Currently: Cloudy<br>
+                    High Today: 88&#8457;<br>
+                    Wind Chill: 55&#8457;<br>
+                    Hummidity: 75%<br>
+                    Wind NW: 21 mph<br>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="forcast">
+            <h3>5 DAY FORCAST</h3>
+            <img src="images/5day.PNG" alt="forcast image">
+        </div>
+
+        <div class="article">
+            <div class="articleimage"><img src="images/articlepicture.PNG" alt="forcast image"></div>
+            <h4>Typhoon Vongfong Makes Landfall in the Philippines <br>
+                <h5>By Jason Gutierrez</h5>
+            </h4>
+
+            <p>
+                A typhoon packing winds of nearly 100 miles per hour made landfall in the eastern Philippines on
+                Thursday after gathering strength across the Pacific Ocean, prompting evacuations and raising concerns that the
+                nation’s most populous area may still lie in its path.</p>
+
+            <p>
+                Typhoon Vongfong was traveling westward at about 10 m.p.h. when it hit Samar Island in the eastern
+                Philippines at 12:15 p.m., according to the Philippine Atmospheric Geophysical and Astronomical Services
+                Administration. Thousands were evacuated on Samar Island on Thursday amid widespread power outages,
+                officials said, but there were no immediate reports ... <a
+                    href="https://www.nytimes.com/2020/05/13/world/asia/philippines-typhoon-vongfong.html">Continue
+                    Reading</a></p>
+        </div>
+
+
+        <div class="contact">
+            <img class="contimg" src="images/map.PNG" alt="map">
+            <div class="contactinfo">
+                <h4>24-7 Weather</h4>
+                <p>7355 N Linder Rd, <br>
+                    Meridian, ID 83646</p>
+
+                <p>Phone: (208) 957-7300<br>
+                    www.24-7weather.com
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; <script src="js/dynamicyear.js"></script> | 24-7 Weather | All Rights Reserved |
+        <script src="js/currentdate.js"></script> <span id="currentdate"></span>
+        <script src="js/toggleMenu.js"></script>
+        <script src="js/banner.js"></script>
+    </footer>
+</body>
+
+</html>
