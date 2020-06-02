@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
-    let temp = parseFloat(document.getElementById("ctemp").textContent);
-    let speed = parseFloat(document.getElementById("cspeed").textContent);
-
+    let temp = document.querySelector("#ctemp").innerText;
+    let speed = document.querySelector("#cspeed").innerText;
     let windchill = document.getElementById('windchill');
 
     windchill.innerHTML = buildWC(speed, temp);

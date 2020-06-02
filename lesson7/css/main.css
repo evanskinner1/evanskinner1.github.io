@@ -43,6 +43,7 @@ div:not(#banner) {
 	max-width: 960px;
 	margin: auto;
 }
+
 noscript p {
 	background-color: rgb(221, 61, 61);
 	padding: 1rem;
@@ -81,24 +82,26 @@ nav {
 .responsive li {
 	display: block;
 }
+
 body#preston #active {
 	background-color: #455b6d;
-		color: white;
+	color: white;
 }
-body#gallery #active{
+
+body#gallery #active {
 	background-color: #455b6d;
-		color: white;
+	color: white;
 }
 
-.galcon img {
-    width: 90%;
-    height: auto;
+.imgcontain {
+	display: grid;
+	grid-template-columns: 1fr;
+	text-align: center;
 }
 
-
-.galcon {
-    display: grid;
-    grid-template-columns: 1fr
+.gallery-item img {
+	width: 90%;
+	height: auto;
 }
 
 @media only screen and (max-width: 600px) {
@@ -133,6 +136,7 @@ body#gallery #active{
 	.forcast {
 		display: none;
 	}
+
 	.article {
 		border-style: solid;
 		padding: 1rem;
@@ -141,7 +145,7 @@ body#gallery #active{
 
 	.articleimage img {
 		width: 90%;
-		padding:1rem;
+		padding: 1rem;
 	}
 
 	.contimg {
@@ -154,15 +158,59 @@ body#gallery #active{
 		padding: 1rem;
 	}
 
-	.galcon {
-        display: grid;
-        grid-template-columns: 1fr 1fr
-    }
+}
+
+/* Media Query for MEDIUM views */
+@media only screen and (min-width: 750px) {
+
+	header img {
+		width: 100%;
+	}
+
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.navigation a:hover {
+		background-color: #455b6d;
+		color: white;
+	}
+
+	footer {
+		display: block;
+		text-align: center;
+		margin: 10px auto;
+		max-width: 1000px;
+	}
+
+	.imgcontain {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		text-align: center;
+	}
+
+	.gallery-item img {
+		width: 90%;
+		height: auto;
+	}
 
 }
 
-/* Media Query for medium+ views */
-@media only screen and (min-width: 32.5em) {
+/* Media Query for LARGE views */
+@media only screen and (min-width: 1000px) {
 	header img {
 		width: 100%;
 	}
@@ -228,7 +276,7 @@ body#gallery #active{
 	.article {
 		border-style: solid;
 		padding: 1rem;
-		
+
 	}
 
 	.articleimage img {
@@ -262,20 +310,29 @@ body#gallery #active{
 		max-height: 100%;
 		padding-top: 1em;
 	}
-	
-	.galcon img {
-        width: 90%;
-        height: auto;
-    }
-    
-    
-    .galcon img:hover {
-        box-shadow: 10px 10px 5px #888888;
-    }
-    
-    .galcon {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr
-    }
 
+	.imgcontain {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		text-align: center;
+	}
+
+	.imgcontain:not(#banner) {
+		max-width: 1500px;
+		margin: auto;
+	}
+
+	.gallery-item img {
+		width: 90%;
+		height: auto;
+		text-align: center;
+	}
+
+	.gallery-item {
+		padding-top: 3rem;
+	}
+
+	.gallery-item:hover {
+		box-shadow: 0 0 50px #333;
+	}
 }
