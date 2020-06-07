@@ -17,7 +17,11 @@ body {
 	border: 5px solid Black;
 	display: inline-block;
 	min-width: 1rem;
-	padding:20px;
+	padding: 20px;
+}
+
+.container p {
+	text-align: left;
 }
 
 header {
@@ -98,7 +102,8 @@ main img {
 	height: auto;
 }
 
-p, ol{
+p,
+ol {
 	font-family: 'Assistant', sans-serif;
 	font-size: 18px;
 

@@ -149,14 +149,6 @@ body#gallery #active {
 .contimg {
 	display: none;
 }
-
-img[data-src] {
-	filter: blur(.4em);
-  }
-   img {
-	filter: blur(0em);
-	transition: filter 1s;
-  }
 /* Media Query for MEDIUM views */
 @media only screen and (min-width: 500px) {
 
@@ -239,13 +231,7 @@ img[data-src] {
 		max-height: 100%;
 		padding-top: 1em;
 	}
-	img[data-src] {
-		filter: blur(.4em);
-	  }
-	   img {
-		filter: blur(0em);
-		transition: filter 1s;
-	  }
+
 }
 
 /* Media Query for LARGE views */
@@ -376,11 +362,4 @@ img[data-src] {
 	.gallery-item:hover {
 		box-shadow: 0 0 50px #333;
 	}
-	img[data-src] {
-		filter: blur(.4em);
-	  }
-	   img {
-		filter: blur(0em);
-		transition: filter 2s;
-	  }
 }

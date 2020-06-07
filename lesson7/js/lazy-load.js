@@ -13,7 +13,7 @@ function preloadImage(img) {
 
 const imgOptions = {
     threshold: 1,
-    rootMargin: "0px 0px 300px 0px"
+    rootMargin: "0px 0px 200px 0px"
 };
 
 const imgObserver = new IntersectionObserver((entries,imgObserver) => {
@@ -23,6 +23,7 @@ const imgObserver = new IntersectionObserver((entries,imgObserver) => {
     } else {
         preloadImage(entry.target);
         imgObserver.unobserve(entry.target);
+        entry.target.style.filter = 'blur(0px)';
     }  
  }) 
 
