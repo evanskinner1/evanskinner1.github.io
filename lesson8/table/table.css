@@ -1,60 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 table {
-    width: 250px;
+    width: 300px;
+    height: 400px;
     font-family: Ubuntu, sans-serif;
     border-spacing: 0;
     border-collapse: collapse;
- }
- 
- table, caption, th, td {
-   border: solid 1px #ccc;
- }
- 
- caption {
-   font-size: 1.5rem;
-   font-weight: bold;
-   padding: .5rem;
-   background-color: #7fb9c2;
-   border-bottom: none;
- }
- 
- th, td {
-   font-weight: normal;
-   padding: 5px;
-   text-align: center;
- }
- 
- thead th {
-     color: #FFF;
-     font-weight: bold;
-     background-color: #628ca6;
- }
- 
- tbody tr:nth-child(5) {
-   font-style: italic;
- }
- 
- tbody td:hover {
-     background-color: #628ca6;
-     border: none;  
- }
- 
- tbody td {
-   font-style: normal;
- }
- 
- tr:nth-of-type(even) {
-     background-color: #e7f0ed;
- }
- 
- tr:nth-of-type(odd) {
-     background-color: #e7ffed ;
- }
- 
- tfoot {
-   font-size: .7rem;
- }
- 
- tfoot td {
-     background-color: #7fb9c2;
- }
- 
+}
+
+.acme {
+    color: black;
+    background-color: #7fb9c2;
+}
+
+table,
+th,
+td {
+    border: solid 1px #000;
+}
+
+th,
+td {
+    font-weight: normal;
+    padding: 5px;
+    text-align: center;
+}
+
+thead th {
+    color: #eee;
+    font-weight: bold;
+    background-color: #628ca6;
+}
+
+tbody td:hover {
+    background-color: #628ca6;
+}
+
+tfoot td {
+    background-color: #7fb9c2;
+    font-size: .8rem;
+}
+
+tbody tr:nth-child(6) {
+    font-style: italic;
+}
+
+tr:nth-of-type(even) {
+    background-color: #e7f0ed;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #e7ffed;
+}
