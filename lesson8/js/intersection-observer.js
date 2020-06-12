@@ -1,5 +1,7 @@
 const sectionOne = document.querySelector('.section1');
 
+
+
 const options = {
     root: null,
     threshold: 0,

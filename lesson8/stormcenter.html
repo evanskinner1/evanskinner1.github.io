@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24-7 Storm Centery</title>
+    <title>24-7 Storm Center</title>
     <meta name="description" content="Grid Layout">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 </head>
 
 
-<body id="preston">
+<body id="storm">
     <div id="banner"></div>
     <noscript>
         <p>JavaScript is needed to enhance features of this page. Please enable JavaScript.</p>
@@ -34,30 +34,115 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="../index.html" title="Return to Portal"> Portal</a></li>
-            <li><a href="preston.html" title="Go to the Preston page"> Preston</a></li>
+            <li><a href="../lesson7/preston.html" title="Go to the Preston page"> Preston</a></li>
             <li><a href="#"> Soda Springs</a></li>
             <li><a href="#"> Fish Haven</a></li>
-            <li><a href="#"> Storm Center</a></li>
-            <li><a id="active" href="gallery.html"> Gallery</a></li>
+            <li><a id="active" href="stormcenter.html"> Storm Center</a></li>
+            <li><a href="../lesson7/gallery.html"> Gallery</a></li>
         </ul>
     </nav>
 
 
     <main>
-        <h2>24-7 Weather Gallery</h2>
+        <h2>24-7 Storm Form</h2>
 
-        <form method="GET" action="thanks.html">
-<fieldset>
-    <legend>Personal Information</legend>
-    <label>Full Name*:</label>
-    <input type="text" name="fullname" placeholder="Full Name">
-</fieldset>
+        <form class="subform" action="thanks.html" method="GET">
+            <fieldset class="personal">
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="fullname">Full Name*:</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}" required="">
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" placeholder="(###) ###-####" required="">
 
-<fieldset>
-    <legend>Storm Information</legend>
-</fieldset>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="youremail@proivder.com">
+
+                </div>
+                <div>
+                    <label for="zip">ZIP code:</label>
+                    <input type="number" name="zip" id="zip" min="5" required="">
+                </div>
+            </fieldset>
+
+            <fieldset class="storm">
+                <legend>Storm Information</legend>
+                <div>
+                    <label for="sdate">Storm Date</label>
+                    <input type="date" name="sdate" id="sdate">
+                </div>
+                <div>
+                    <label>Storm Type:</label><input type="text" name="stormtype" list="stormtype">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood">
+                        </option>
+                        <option value="Hail">
+                        </option>
+                        <option value="Hurricane">
+                        </option>
+                        <option value="Thunderstorm">
+                        </option>
+                        <option value="Tornado">
+                        </option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="rating">Rating: &nbsp;&nbsp;&nbsp;</label>
+                    <input class="slider" type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <b><span id="ratingvalue">5</span></b>
+
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+                </div>
+                <div>
+                    <label><span>Storm Region:</span></label>
+                    <select name="region">
+                        <option value="select" selected="" disabled="">Select Region ...</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
 
 
+                </div>
+            </fieldset>
+            
+            <fieldset class="safety">
+                <legend>Safety Information</legend>
+
+                <label><span><b>Are you in danger?</b></span></label>
+                <label><span>Yes <input type="radio" name="danger" id="yes" value="yes"></span></label>
+                <label><span>No <input type="radio" name="danger" id="no" value="no"></span></label>
+                <label><span>Maybe <input type="radio" name="danger" id="maybe"
+                            value="maybe"></span></label>
+
+                <div>
+                    <label for="comment">Comments</label>
+                    <textarea name="commet" id="comment" cols="30" rows="10"
+                        placeholder="Additional information ..."></textarea>
+                </div>
+
+            </fieldset>
+            <div class="button">
+                <input class="submit" type="submit" value="Submit Report">
+            </div>
         </form>
 
 
@@ -73,8 +158,15 @@
     <script src="js/banner.js"></script>
     <script type="text/javascript" src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>WebFont.load({google: {families: ['Montserrat']}});</script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Montserrat']
+            }
+        });
+    </script>
     <script src="js/lazy-load.js"></script>
+    <script src="js/adjustRating.js"></script>
 </body>
 
 </html>

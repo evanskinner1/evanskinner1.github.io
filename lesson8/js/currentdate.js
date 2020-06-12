@@ -12,6 +12,8 @@ function dateConvert(dateobj){
 
   return dates[parseInt(day)] + " " + date + " " + months[parseInt(month)-1] + " " + year;
 }
+/*var string = document.lastModified;
 
-
+document.write("Last Updated:" + " " + document.lastModified);*/
+  
  

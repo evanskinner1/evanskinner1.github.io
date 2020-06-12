@@ -1,4 +1,3 @@
-
 var x = document.getElementById("banner");
   var d = new Date();
   var n = d.getDay();
