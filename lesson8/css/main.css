@@ -159,13 +159,9 @@ body#storm #active {
 }
 
 /*Storm Center page formatting*/
-.subform {
-	max-width: 400px;
-	margin: auto;
-}
 
 fieldset {
-	margin: auto;
+	margin: 2rem auto;
 	border-color: #ff9409;
 	border-style: solid;
 }
@@ -176,20 +172,8 @@ fieldset>legend {
 	text-align: center;
 }
 
-.personal label {
-	margin: 8px;
-}
-
-
-.storm label {
-	margin: 10px;
-}
-
-.safety {
-	text-align: center;
-}
-
-.safety label {
+.storm div label {
+	float: left;
 	margin: 10px;
 }
 
@@ -202,8 +186,38 @@ fieldset>legend {
 	margin: 2rem auto;
 }
 
-label {
+form div {
+	clear: left;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+}
+
+form div label {
+	float: left;
+	width: 40%;
+	font-weight: bold;
+}
+
+
+label span {
 	display: block;
+	padding-top: 0.7rem;
+	padding-bottom: 0.2rem;
+	text-align: left;
+}
+
+.slider {
+	min-width: 50%;
+	background-color: orangered;
+}
+
+textarea {
+	width: 100%;
+}
+
+.comment {
+	text-align: right;
 }
 
 .thanks {
@@ -349,6 +363,72 @@ label {
 	label {
 		display: block;
 	}
+
+	/*Storm Center page formatting*/
+
+	.subform {
+		max-width: 750px;
+		margin: 2rem auto;
+		padding: 2rem;
+	}
+
+	fieldset {
+		margin: 2rem auto;
+		border-color: #ff9409;
+		border-style: solid;
+	}
+
+	fieldset>legend {
+		font-weight: bolder;
+		font-size: 24px;
+		text-align: center;
+	}
+
+
+	.storm div label {
+		float: left;
+		margin: 10px;
+	}
+
+	.button {
+		text-align: center;
+	}
+
+	.submit {
+		padding: 1rem;
+		margin: 2rem auto;
+	}
+
+	form div {
+		clear: left;
+		margin: 0;
+		padding: 0;
+		padding-top: 5px;
+	}
+
+	form div label {
+		float: left;
+		width: 40%;
+		font-weight: bold;
+	}
+
+	textarea {
+		min-width: 450px;
+	}
+
+	label span {
+		display: block;
+		padding-top: 0.7rem;
+		padding-bottom: 0.2rem;
+		text-align: left;
+	}
+
+	.slider {
+		min-width: 50%;
+		background-color: orangered;
+	}
+
+}
 
 	/* Media Query for LARGE views */
 	@media only screen and (min-width: 1000px) {
@@ -516,21 +596,10 @@ label {
 			margin: 2rem auto;
 		}
 
-		form div {
-			clear: left;
-			margin: 0;
-			padding: 0;
-			padding-top: 5px;
-		}
-
 		form div label {
 			float: left;
 			width: 40%;
 			font-weight: bold;
-		}
-
-		textarea {
-			min-width: 500px;
 		}
 
 		label span {
@@ -546,4 +615,3 @@ label {
 		}
 
 	}
-}
