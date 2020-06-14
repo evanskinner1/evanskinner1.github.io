@@ -51,7 +51,8 @@
                 <legend>Personal Information</legend>
                 <div>
                     <label for="fullname">Full Name*:</label>
-                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}" required="">
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" pattern="[a-zA-Z ]{5,99}"
+                        required="">
                 </div>
                 <div>
                     <label for="phone">Phone Number</label>
@@ -113,7 +114,7 @@
                 </div>
                 <div>
                     <label><span>Storm Region:</span></label>
-                    <select name="region">
+                    <select class="region" name="region">
                         <option value="select" selected="" disabled="">Select Region ...</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
@@ -123,18 +124,17 @@
 
                 </div>
             </fieldset>
-            
+
             <fieldset class="safety">
                 <legend>Safety Information</legend>
 
                 <label><span><b>Are you in danger?</b></span></label>
                 <label><span>Yes <input type="radio" name="danger" id="yes" value="yes"></span></label>
                 <label><span>No <input type="radio" name="danger" id="no" value="no"></span></label>
-                <label><span>Maybe <input type="radio" name="danger" id="maybe"
-                            value="maybe"></span></label>
+                <label><span>Maybe <input type="radio" name="danger" id="maybe" value="maybe"></span></label>
 
                 <div>
-                    <label  for="comment">Comments</label>
+                    <label for="comment">Comments</label>
                     <textarea name="commet" id="comment" cols="30" rows="10"
                         placeholder="Additional information ..."></textarea>
                 </div>

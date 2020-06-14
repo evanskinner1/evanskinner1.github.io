@@ -227,6 +227,17 @@ textarea {
 	margin: 50px;
 }
 
+.personal input {
+	margin-top: 4px;
+}
+
+.storm .region {
+	margin-top: 15px;
+}
+.storm .slider {
+	margin-top: 8px;
+}
+
 /* Media Query for MEDIUM views */
 @media only screen and (min-width: 500px) {
 
@@ -427,6 +438,16 @@ textarea {
 		min-width: 50%;
 		background-color: orangered;
 	}
+	.personal input {
+		margin-top: 4px;
+	}
+
+	.storm .region {
+		margin-top: 15px;
+	}
+	.storm .slider {
+		margin-top: 8px;
+	}
 
 }
 
@@ -585,6 +606,7 @@ textarea {
 		.storm div label {
 			float: left;
 			margin: 10px;
+			
 		}
 
 		.button {
@@ -613,5 +635,17 @@ textarea {
 			min-width: 50%;
 			background-color: orangered;
 		}
+
+		.personal input {
+			margin-top: 4px;
+		}
+
+		.storm .region {
+			margin-top: 15px;
+		}
+		.storm .slider {
+			margin-top: 8px;
+		}
+
 
 	}
