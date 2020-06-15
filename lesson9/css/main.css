@@ -351,22 +351,6 @@ label {
 	}
 	 /*Lesson 9 Home Page */
 
-	 .cards section {
-		display: flex;
-		  flex-direction: row;
-		  background-color: lightgreen;
-		  margin: 1rem;
-		  padding: 1rem;
-		  width: 100%;
-	  }
-	  
-	  .cards section:nth-child(odd) {
-		  flex-direction: row-reverse;
-	  }
-
-	  .cards img {
-		  width: 270px;
-	  }
 }
 
 	/* Media Query for LARGE views */
