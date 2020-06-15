@@ -1,4 +1,6 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+//const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+const requestURL = 'js/towns.json'
 
 
 
@@ -28,7 +30,8 @@ fetch(requestURL)
                 p.textContent = "Year Founded: " + info[i].yearFounded;
                 p1.textContent = "Population: " + info[i].currentPopulation;
                 p2.textContent = "Annual Rain Fall: " + info[i].averageRainfall;
-               
+                image.setAttribute('src', info[i].photo);
+                
 
 
                 card.appendChild(h2);
@@ -37,6 +40,7 @@ fetch(requestURL)
                 card.appendChild(p1);
                 card.appendChild(p2);
                 card.appendChild(image);
+                
                 
 
                 document.querySelector('div.cards').appendChild(card);
