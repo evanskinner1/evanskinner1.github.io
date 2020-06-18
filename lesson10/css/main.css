@@ -93,11 +93,6 @@ body#gallery #active {
 	color: white;
 }
 
-body#storm #active {
-	background-color: #455b6d;
-	color: white;
-}
-
 .imgcontain {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -128,7 +123,6 @@ body#storm #active {
 	background-color: rgb(190, 187, 187, 0.6);
 	font-weight: bold;
 }
-
 .forcast {
 	padding: 1em;
 	text-align: center;
@@ -149,100 +143,22 @@ body#storm #active {
 	width: 40%;
 	padding: 1rem;
 }
-
 .forcast {
 	display: none;
 }
-
 .contimg {
 	display: none;
 }
 
-/*Storm Center page formatting*/
-.subform {
-	max-width: 400px;
-	margin: auto;
-}
-
-fieldset {
-	margin: auto;
-	border-color: #ff9409;
-	border-style: solid;
-}
-
-fieldset>legend {
-	font-weight: bolder;
-	font-size: 24px;
-	text-align: center;
-}
-
-.personal label {
-	margin: 8px;
-}
-
-
-.storm label {
-	margin: 10px;
-}
-
-.safety {
-	text-align: center;
-}
-
-.safety label {
-	margin: 10px;
-}
-
-.button {
-	text-align: center;
-}
-
-.submit {
-	padding: 1rem;
-	margin: 2rem auto;
-}
-
-label {
-	display: block;
-}
-
-.thanks {
-	max-width: 300px;
-	border: 15px solid #045ea8;
-	padding: 30px;
-	margin: 50px;
-}
-
-/*Lesson 9 Home Page */
-
-.cards img {
-	max-width: 90%;
-	max-height: 100%;
-	padding: 1rem;
-}
-
-
-
-.cards section {
-	background-color: lightsteelblue;
-	border: 2px solid black;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 1rem;
-}
-
-.homepage {
-	text-align: center;
-}
-
-.cards section article img {
-	background-color: lime;
-	display: flex;
-	flex-direction: row;
-}
-
+img[data-src] {
+	filter: blur(.4em);
+  }
+   img {
+	filter: blur(0em);
+	transition: filter 1s;
+  }
 /* Media Query for MEDIUM views */
-@media only screen and (max-width: 999px) and (min-width: 500px) {
+@media only screen and (min-width: 500px) {
 
 	header img {
 		width: 100%;
@@ -269,7 +185,6 @@ label {
 		background-color: #455b6d;
 		color: white;
 	}
-
 	.containerone {
 		position: relative;
 		text-align: center;
@@ -289,7 +204,6 @@ label {
 		background-color: rgb(190, 187, 187, 0.6);
 		font-weight: bold;
 	}
-
 	.forcast {
 		display: block;
 		padding: 1em;
@@ -299,7 +213,7 @@ label {
 	.forcast img {
 		width: 100%;
 	}
-
+	
 	footer {
 		display: block;
 		text-align: center;
@@ -317,7 +231,6 @@ label {
 		width: 90%;
 		height: auto;
 	}
-
 	.contimg {
 		display: block;
 		grid-column: 1/2;
@@ -326,81 +239,13 @@ label {
 		max-height: 100%;
 		padding-top: 1em;
 	}
-
-	/*Storm Center page formatting*/
-
-	.subform {
-		min-width: 300px;
-		max-width: 750px;
-		margin: 2rem auto;
-		padding: 2rem;
-	}
-
-	fieldset {
-		margin: auto;
-		border-color: #ff9409;
-		border-style: solid;
-	}
-
-	fieldset>legend {
-		font-weight: bolder;
-		font-size: 24px;
-		text-align: center;
-	}
-
-	.personal label {
-		margin: 10px;
-	}
-
-
-	.storm label {
-		margin: 10px;
-	}
-
-	.safety {
-		text-align: center;
-	}
-
-	.safety label {
-		margin: 10px;
-	}
-
-	.button {
-		text-align: center;
-	}
-
-	.submit {
-		padding: 1rem;
-		margin: 2rem auto;
-	}
-
-	label {
-		display: block;
-	}
-
-	/*Lesson 9 Home Page */
-
-	.cards section {
-		display: grid;
-		  grid-template-columns: 1fr 1fr;
-		background-color: lightsteelblue;
-		grid-gap: 1em;
-		border: 2px solid black;
-		width: 100%;
-		text-align: center;
-		margin-bottom: 1rem;
-	}
-
-	  section:nth-child(odd) img {
-		  grid-column: 2;
-		  grid-row: 1;
-		  
+	img[data-src] {
+		filter: blur(.4em);
 	  }
-
-	.homepage {
-		text-align: center;
-	}
-
+	   img {
+		filter: blur(0em);
+		transition: filter 1s;
+	  }
 }
 
 /* Media Query for LARGE views */
@@ -531,99 +376,11 @@ label {
 	.gallery-item:hover {
 		box-shadow: 0 0 50px #333;
 	}
-
-	/*Storm Center page formatting*/
-
-	.subform {
-		min-width: 300px;
-		max-width: 750px;
-		margin: 2rem auto;
-		padding: 2rem;
-	}
-
-	fieldset {
-		width: 600px;
-		margin: 2rem auto;
-		border-color: #ff9409;
-		border-style: solid;
-	}
-
-	fieldset>legend {
-		font-weight: bolder;
-		font-size: 24px;
-		text-align: center;
-	}
-
-
-	.storm div label {
-		float: left;
-		margin: 10px;
-	}
-
-	.button {
-		text-align: center;
-	}
-
-	.submit {
-		padding: 1rem;
-		margin: 2rem auto;
-	}
-
-	form div {
-		clear: left;
-		margin: 0;
-		padding: 0;
-		padding-top: 5px;
-	}
-
-	form div label {
-		float: left;
-		width: 40%;
-		font-weight: bold;
-	}
-
-	textarea {
-		min-width: 500px;
-	}
-
-	label span {
-		display: block;
-		padding-top: 0.7rem;
-		padding-bottom: 0.2rem;
-		text-align: left;
-	}
-
-	.slider {
-		min-width: 50%;
-		background-color: orangered;
-	}
-
-	/*Lesson 9 Home Page */
-
-	.cards {
-		padding: 1rem;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 1rem;
-		width: 100%;
-
-	}
-
-	.cards section {
-		background-color: lightsteelblue;
-		border: 2px solid black;
-		width: 100%;
-		text-align: center;
-		grid-row: 1;
-	}
-
-
-	.homepage {
-		text-align: center;
-	}
-
-	
-
-
-
+	img[data-src] {
+		filter: blur(.4em);
+	  }
+	   img {
+		filter: blur(0em);
+		transition: filter 2s;
+	  }
 }
