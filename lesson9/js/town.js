@@ -15,6 +15,10 @@ fetch(requestURL)
         const info = jsonObject['towns'];
              console.log(jsonObject);  // temporary checking for valid response and data parsing
              for (let i = 0, x = info.length; i < x; i++) {
+
+                if (info[i].name == "Preston" || info[i].name == "Soda Springs" || info[i].name == "Springfield")
+                {
+
                 let card = document.createElement('section');
                 let article = document.createElement('article')
                 let h2 = document.createElement('h2');
@@ -44,7 +48,7 @@ fetch(requestURL)
 
                 document.querySelector('div.cards').appendChild(card);
                 
-                
+                }
                 
      } })
 

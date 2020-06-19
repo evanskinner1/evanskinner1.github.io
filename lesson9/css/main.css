@@ -22,6 +22,12 @@ footer {
 	padding: 1.5rem;
 }
 
+.wireframe a {
+	display: inline;
+	color: white;
+	padding: 10px;
+}
+
 nav {
 	background-color: #ff9409;
 }
@@ -221,8 +227,6 @@ label {
 	padding: 1rem;
 }
 
-
-
 .cards section {
 	background-color: lightsteelblue;
 	border: 2px solid black;
@@ -236,7 +240,6 @@ label {
 }
 
 .cards section article img {
-	background-color: lime;
 	display: flex;
 	flex-direction: row;
 }
@@ -615,8 +618,9 @@ label {
 		width: 100%;
 		text-align: center;
 		grid-row: 1;
+		box-shadow: 3px 3px #ff9409, -5px 0 5px #045ea8;
+	
 	}
-
 
 	.homepage {
 		text-align: center;
