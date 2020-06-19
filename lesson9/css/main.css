@@ -88,7 +88,7 @@ nav {
 .responsive li {
 	display: block;
 }
-
+/*------------------WayFinding-------------------- */
 body#preston #active {
 	background-color: #455b6d;
 	color: white;
@@ -103,7 +103,11 @@ body#storm #active {
 	background-color: #455b6d;
 	color: white;
 }
-
+body#homepage #active {
+	background-color: #455b6d;
+	color: white;
+}
+/*----------------------------------------------- */
 .imgcontain {
 	display: grid;
 	grid-template-columns: 1fr;

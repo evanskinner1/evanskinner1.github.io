@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>24-7 Storm Centery</title>
-    <meta name="description" content="Grid Layout">
+    <title>24-7 Home</title>
+    <meta name="description" content="Home page">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
     <link rel="preload" href="/css/normalize.css" as="style">
@@ -15,7 +15,7 @@
 </head>
 
 
-<body class="homepage">
+<body id="homepage">
     <div id="banner"></div>
     <noscript>
         <p>JavaScript is needed to enhance features of this page. Please enable JavaScript.</p>
@@ -34,7 +34,7 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="../index.html" title="Return to Portal"> Portal</a></li>
-            <li><a href="/lesson9/index.html"> Home</a></li>
+            <li><a id="active" href="/lesson9/index.html"> Home</a></li>
             <li><a href="/lesson7/preston.html" title="Go to the Preston page"> Preston</a></li>
             <li><a href="#"> Soda Springs</a></li>
             <li><a href="#"> Fish Haven</a></li>
@@ -45,7 +45,7 @@
 
 
     <main>
-        <h1>Home Page</h1>
+        <h1 class="homepage">Home Page</h1>
 
         <div class="cards"> </div>
 
