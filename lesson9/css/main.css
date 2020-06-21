@@ -88,6 +88,7 @@ nav {
 .responsive li {
 	display: block;
 }
+
 /*------------------WayFinding-------------------- */
 body#preston #active {
 	background-color: #455b6d;
@@ -103,10 +104,12 @@ body#storm #active {
 	background-color: #455b6d;
 	color: white;
 }
+
 body#homepage #active {
 	background-color: #455b6d;
 	color: white;
 }
+
 /*----------------------------------------------- */
 .imgcontain {
 	display: grid;
@@ -232,7 +235,7 @@ label {
 }
 
 .cards section {
-	background-color: lightsteelblue;
+
 	border: 2px solid black;
 	width: 100%;
 	text-align: center;
@@ -389,8 +392,8 @@ label {
 
 	.cards section {
 		display: grid;
-		  grid-template-columns: 1fr 1fr;
-		background-color: lightsteelblue;
+		grid-template-columns: 1fr 1fr;
+
 		grid-gap: 1em;
 		border: 2px solid black;
 		width: 100%;
@@ -398,11 +401,11 @@ label {
 		margin-bottom: 1rem;
 	}
 
-	  section:nth-child(odd) img {
-		  grid-column: 2;
-		  grid-row: 1;
-		  
-	  }
+	section:nth-child(odd) img {
+		grid-column: 2;
+		grid-row: 1;
+
+	}
 
 	.homepage {
 		text-align: center;
@@ -617,20 +620,20 @@ label {
 	}
 
 	.cards section {
-		background-color: lightsteelblue;
+
 		border: 2px solid black;
 		width: 100%;
 		text-align: center;
 		grid-row: 1;
 		box-shadow: 3px 3px #ff9409, -5px 0 5px #045ea8;
-	
+
 	}
 
 	.homepage {
 		text-align: center;
 	}
 
-	
+
 
 
 
