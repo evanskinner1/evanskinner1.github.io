@@ -26,8 +26,8 @@ fetch(requestURL)
                 let p = document.createElement('p');
                 let p1 = document.createElement('p');
                 let p2 = document.createElement('p');
-                let image = document.createElement('img')
-                
+                let image = document.createElement('img');
+          
                 
 
                 h2.textContent = info[i].name;
@@ -36,6 +36,7 @@ fetch(requestURL)
                 p1.textContent = "Population: " + info[i].currentPopulation;
                 p2.textContent = "Annual Rain Fall: " + info[i].averageRainfall;
                 image.setAttribute('src', info[i].photo);
+                image.setAttribute('alt',`images-of-towns`);
 
 
                 article.appendChild(h2);
