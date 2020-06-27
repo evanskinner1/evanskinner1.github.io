@@ -10,9 +10,9 @@ fetch(apiURL)
 
         document.querySelector('#condition').textContent = jsObject.list[0].weather[0].main;
 
-        document.querySelector('#ctemp').textContent = Math.round(jsObject.list[0].main.temp);
+        document.querySelector('#ctemp').textContent = jsObject.list[0].main.temp;
 
-        document.querySelector('#cspeed').textContent = Math.round(jsObject.list[0].wind.speed);
+        document.querySelector('#cspeed').textContent = jsObject.list[0].wind.speed;
 
         document.querySelector('#humidity').textContent = jsObject.list[0].main.humidity;
         
@@ -21,7 +21,7 @@ fetch(apiURL)
         var wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
         wc = Math.floor(wc);
         wc = (wc > temp) ? temp : wc;
-        document.querySelector('#windchill').textContent = Math.round(wc);  
+        document.querySelector('#windchill').textContent = wc;  
          } );
 
 // list[8].dt_txt

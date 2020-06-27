@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    
     let temp = document.querySelector("#ctemp").innerText;
     let speed = document.querySelector("#cspeed").innerText;
     let windchill = document.getElementById('windchill');

@@ -172,9 +172,6 @@ img[data-src] {
 		width: 60px;
 	}
 
-	.wireframe a {
-		color: white;
-	}
 /* Media Query for MEDIUM views */
 @media only screen and (min-width: 500px) {
 

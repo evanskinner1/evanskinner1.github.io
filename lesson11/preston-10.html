@@ -57,10 +57,10 @@
             <div class="summary">
                 <h4>Weather Summary</h4>
                 <p>Condition: <span id="condition"></span><br>
-                    Current: <span id="ctemp"></span>°F<br>
+                    Current: <span id="ctemp"></span><br>
                     Wind Chill: <span id="windchill"></span>°F<br>
-                    Humidity: <span id="humidity"></span>% <br>
-                    Wind NW: <span id="cspeed"></span> MPH<br>
+                    Humidity: <span id="humidity"></span> <br>
+                    Wind NW: <span id="cspeed"></span><br>
                 </p>
             </div>
         </div>
@@ -70,28 +70,34 @@
             <h3>5 DAY FORCAST</h3>
             <table>
                 <tbody><tr>
-                    <th id="day1"></th>
-                    <th id="day2"></th>
-                    <th id="day3"></th>
-                    <th id="day4"></th>
-                    <th id="day5"></th>
+                    <th id="day-1"></th>
+                    <th id="day-2"></th>
+                    <th id="day-3"></th>
+                    <th id="day-4"></th>
+                    <th id="day-5"></th>
                 </tr>
                 <tr>
-                    <td><img id="img1"></td>
-                    <td><img id="img2"></td>
-                    <td><img id="img3"></td>
-                    <td><img id="img4"></td>
-                    <td><img id="img5"></td>
+                    <td><img id="img-1"></td>
+                    <td><img id="img-2"></td>
+                    <td><img id="img-3"></td>
+                    <td><img id="img-4"></td>
+                    <td><img id="img-5"></td>
                 </tr>
                 <tr>
-                    <td id="max1"></td>
-                    <td id="max2"></td>
-                    <td id="max3"></td>
-                    <td id="max4"></td>
-                    <td id="max5"></td>
+                    <td id="high-1"></td>
+                    <td id="high-2"></td>
+                    <td id="high-3"></td>
+                    <td id="high-4"></td>
+                    <td id="high-5"></td>
                 </tr>
             </tbody></table>
         </div>
+
+
+        
+        <div class="cards"> </div>
+
+
 
         <div class="article">
             <div class="articleimage"><img src="images/articlepic.jpg" alt="forcast image"></div>
@@ -132,18 +138,16 @@
     <footer>
         &copy; <script src="js/dynamicyear.js"></script> | 24-7 Weather | All Rights Reserved |
         <script src="js/currentdate.js"></script> <span id="currentdate"></span>
-<div class="wireframe">
-    <a href="https://openweathermap.org/">OpenWeatherMap</a>
 
-
-</div>
     </footer>
     <script src="js/toggleMenu.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ['Montserrat']}});</script>
     <script src="js/weatherapi.js"></script>
-    <script src="js/fiveday.js"></script>
+    <script src="js/test.js"></script>
+    <script src="js/town.js"></script>
 </body>
 
 </html>
