@@ -79,12 +79,17 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=96e5319
         document.getElementById("max3").innerHTML = Math.round(day3.main.temp_max) + "&#8457;";
         document.getElementById("max4").innerHTML = Math.round(day4.main.temp_max) + "&#8457;";
         document.getElementById("max5").innerHTML = Math.round(day5.main.temp_max) + "&#8457;";
-
+        
         document.getElementById("img1").setAttribute("src", imageWeather + day1.weather[0].icon + ".png");
         document.getElementById("img2").setAttribute("src", imageWeather + day2.weather[0].icon + ".png");
         document.getElementById("img3").setAttribute("src", imageWeather + day3.weather[0].icon + ".png");
         document.getElementById("img4").setAttribute("src", imageWeather + day4.weather[0].icon + ".png");
         document.getElementById("img5").setAttribute("src", imageWeather + day5.weather[0].icon + ".png");
 
+        document.getElementById("img1").setAttribute('alt',`weathericon`);
+        document.getElementById("img2").setAttribute('alt',`weathericon`);
+        document.getElementById("img3").setAttribute('alt',`weathericon`);
+        document.getElementById("img4").setAttribute('alt',`weathericon`);
+        document.getElementById("img5").setAttribute('alt',`weathericon`);
 
     });
