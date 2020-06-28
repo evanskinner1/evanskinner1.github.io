@@ -68,28 +68,93 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=96e5319
 
         }
 
-        document.getElementById("day1").innerHTML = weekday(day1.dt_txt);
-        document.getElementById("day2").innerHTML = weekday(day2.dt_txt);
-        document.getElementById("day3").innerHTML = weekday(day3.dt_txt);
-        document.getElementById("day4").innerHTML = weekday(day4.dt_txt);
-        document.getElementById("day5").innerHTML = weekday(day5.dt_txt);
 
-        document.getElementById("max1").innerHTML = Math.round(day1.main.temp_max) + "&#8457;";
-        document.getElementById("max2").innerHTML = Math.round(day2.main.temp_max) + "&#8457;";
-        document.getElementById("max3").innerHTML = Math.round(day3.main.temp_max) + "&#8457;";
-        document.getElementById("max4").innerHTML = Math.round(day4.main.temp_max) + "&#8457;";
-        document.getElementById("max5").innerHTML = Math.round(day5.main.temp_max) + "&#8457;";
+
+      
+
+        let table = document.createElement('table');
+        let tbody = document.createElement('tbody');
+        let tr1 = document.createElement('tr');
+        let tr2 = document.createElement('tr');
+        let tr3 = document.createElement('tr');
+
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+
+        let th1 = document.createElement('th');
+        let th2 = document.createElement('th');
+        let th3 = document.createElement('th');
+        let th4 = document.createElement('th');
+        let th5 = document.createElement('th');
         
-        document.getElementById("img1").setAttribute("src", imageWeather + day1.weather[0].icon + ".png");
-        document.getElementById("img2").setAttribute("src", imageWeather + day2.weather[0].icon + ".png");
-        document.getElementById("img3").setAttribute("src", imageWeather + day3.weather[0].icon + ".png");
-        document.getElementById("img4").setAttribute("src", imageWeather + day4.weather[0].icon + ".png");
-        document.getElementById("img5").setAttribute("src", imageWeather + day5.weather[0].icon + ".png");
+        let td6 = document.createElement('td');
+        let td7 = document.createElement('td');
+        let td8 = document.createElement('td');
+        let td9 = document.createElement('td');
+        let td10 = document.createElement('td');
+        
+        let image1 = document.createElement('img');
+        let image2 = document.createElement('img');
+        let image3 = document.createElement('img');
+        let image4 = document.createElement('img');
+        let image5 = document.createElement('img');
 
-        document.getElementById("img1").setAttribute('alt',`weathericon`);
-        document.getElementById("img2").setAttribute('alt',`weathericon`);
-        document.getElementById("img3").setAttribute('alt',`weathericon`);
-        document.getElementById("img4").setAttribute('alt',`weathericon`);
-        document.getElementById("img5").setAttribute('alt',`weathericon`);
+
+        td1.textContent = weekday(day1.dt_txt);
+        td2.textContent = weekday(day2.dt_txt);
+        td3.textContent = weekday(day3.dt_txt);
+        td4.textContent = weekday(day4.dt_txt);
+        td5.textContent = weekday(day5.dt_txt);
+
+        
+        image1.setAttribute("src", imageWeather + day1.weather[0].icon + ".png", 'alt',`weathericon`);
+        image2.setAttribute("src", imageWeather + day2.weather[0].icon + ".png", 'alt',`weathericon`);
+        image3.setAttribute("src", imageWeather + day3.weather[0].icon + ".png", 'alt',`weathericon`);
+        image4.setAttribute("src", imageWeather + day4.weather[0].icon + ".png", 'alt',`weathericon`);
+        image5.setAttribute("src", imageWeather + day5.weather[0].icon + ".png", 'alt',`weathericon`);
+
+        td6.textContent = Math.round(day1.main.temp_max) + "°F";
+        td7.textContent = Math.round(day2.main.temp_max) + "°F";
+        td8.textContent = Math.round(day3.main.temp_max) + "°F";
+        td9.textContent = Math.round(day4.main.temp_max) + "°F";
+        td10.textContent = Math.round(day5.main.temp_max) + "°F";
+
+        table.appendChild(tbody);
+        tbody.appendChild(tr1);
+       
+       
+        tbody.appendChild(tr1);
+        tr1.appendChild(td1);
+        tr1.appendChild(td2);
+        tr1.appendChild(td3);
+        tr1.appendChild(td4);
+        tr1.appendChild(td5);
+
+        tr2.appendChild(th1);
+        tr2.appendChild(th2);
+        tr2.appendChild(th3);
+        tr2.appendChild(th4);
+        tr2.appendChild(th5);
+        
+        tbody.appendChild(tr2);
+        th1.appendChild(image1);
+        th2.appendChild(image2);
+        th3.appendChild(image3);
+        th4.appendChild(image4);
+        th5.appendChild(image5);
+        
+        tbody.appendChild(tr3);
+        tr3.appendChild(td6);
+        tr3.appendChild(td7);
+        tr3.appendChild(td8);
+        tr3.appendChild(td9);
+        tr3.appendChild(td10);
+
+        document.querySelector('div.forcast').appendChild(table);
+
+       
 
     });
