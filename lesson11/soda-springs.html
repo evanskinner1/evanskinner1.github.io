@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preston Weather</title>
+    <title id="cityName">Soda Springs</title>
     <meta name="description" content="Grid Layout">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 </head>
 
 
-<body id="preston">
+<body id="soda-springs">
     <div id="banner">
         <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </div>
@@ -35,9 +35,9 @@
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="../index.html" title="Return to Portal"> Portal</a></li>
             <li><a href="/lesson9/index.html"> Home</a></li>
-            <li><a id="active" href="/lesson11/preston-10.html" title="Go to the Preston page"> Preston</a></li>
-            <li><a href="#"> Soda Springs</a></li>
-            <li><a href="#"> Fish Haven</a></li>
+            <li><a href="preston-10.html" title="Go to the Preston page"> Preston</a></li>
+            <li><a id="active" href="soda-springs.html"> Soda Springs</a></li>
+            <li><a href="fish-haven.html"> Fish Haven</a></li>
             <li><a href="/lesson8/stormcenter.html"> Storm Center</a></li>
             <li><a href="/lesson7/gallery.html"> Gallery</a></li>
         </ul>
@@ -58,18 +58,20 @@
             <div class="summary">
                 <h4>Weather Summary</h4>
                 <p>Condition: <span id="condition"></span><br>
-                    Current: <span id="ctemp"></span>°F<br>
+                    Current: <span id="ctemp"></span><br>
                     Wind Chill: <span id="windchill"></span>°F<br>
-                    Humidity: <span id="humidity"></span>% <br>
-                    Wind NW: <span id="cspeed"></span> MPH<br>
+                    Humidity: <span id="humidity"></span> <br>
+                    Wind NW: <span id="cspeed"></span><br>
                 </p>
             </div>
+            <div class="events"></div>
         </div>
 
-<div class="forcast">
-    <h3>5 DAY FORECAST</h3>
-</div>
- 
+
+        <div class="forcast">
+            <h3>5 DAY FORECAST</h3>
+        </div>
+
 
         <div class="article">
             <div class="articleimage"><img src="images/articlepic.jpg" alt="forcast image"></div>
@@ -110,18 +112,16 @@
     <footer>
         &copy; <script src="js/dynamicyear.js"></script> | 24-7 Weather | All Rights Reserved |
         <script src="js/currentdate.js"></script> <span id="currentdate"></span>
-<div class="wireframe">
-    <a href="https://openweathermap.org/">OpenWeatherMap</a>
 
-
-</div>
     </footer>
     <script src="js/toggleMenu.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/windchill.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>WebFont.load({google: {families: ['Montserrat']}});</script>
     <script src="js/weatherapi.js"></script>
     <script src="js/fiveday.js"></script>
+    <script src="js/town.js"></script>
 </body>
 
 </html>

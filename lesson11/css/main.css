@@ -123,6 +123,7 @@ body#gallery #active {
 	background-color: rgb(190, 187, 187, 0.6);
 	font-weight: bold;
 }
+
 .forcast {
 	padding: 1em;
 	text-align: center;
@@ -143,22 +144,25 @@ body#gallery #active {
 	width: 40%;
 	padding: 1rem;
 }
+
 .forcast {
 	display: none;
 }
+
 .contimg {
 	display: none;
 }
 
 img[data-src] {
 	filter: blur(.4em);
-  }
-   img {
+}
+
+img {
 	filter: blur(0em);
 	transition: filter 1s;
-  }
+}
 
-  
+
 /********Forecast***********/
 
 .forcast table {
@@ -168,10 +172,28 @@ img[data-src] {
 	width: 100%;
 }
 
-	.forcast table img {
-		width: 60px;
-	}
+.forcast table img {
+	width: 60px;
+}
 
+/**********EVENTS*************/
+
+.events {
+text-align: left;
+border: solid 2px black;
+}
+
+
+
+/**********BANNER FIXED**********/
+
+#banner {
+	text-align: center;
+	font-weight: bold;
+	font-size: larger;
+	padding: 20px 20px 20px 20px;
+	background-color: lightblue;
+}
 /* Media Query for MEDIUM views */
 @media only screen and (min-width: 500px) {
 
@@ -200,6 +222,7 @@ img[data-src] {
 		background-color: #455b6d;
 		color: white;
 	}
+
 	.containerone {
 		position: relative;
 		text-align: center;
@@ -219,6 +242,7 @@ img[data-src] {
 		background-color: rgb(190, 187, 187, 0.6);
 		font-weight: bold;
 	}
+
 	.forcast {
 		display: block;
 		padding: 1em;
@@ -228,7 +252,7 @@ img[data-src] {
 	.forcast img {
 		width: 100%;
 	}
-	
+
 	footer {
 		display: block;
 		text-align: center;
@@ -246,6 +270,7 @@ img[data-src] {
 		width: 90%;
 		height: auto;
 	}
+
 	.contimg {
 		display: block;
 		grid-column: 1/2;
@@ -254,13 +279,16 @@ img[data-src] {
 		max-height: 100%;
 		padding-top: 1em;
 	}
+
 	img[data-src] {
 		filter: blur(.4em);
-	  }
-	   img {
+	}
+
+	img {
 		filter: blur(0em);
 		transition: filter 1s;
-	  }
+	}
+
 }
 
 /* Media Query for LARGE views */
@@ -391,11 +419,23 @@ img[data-src] {
 	.gallery-item:hover {
 		box-shadow: 0 0 50px #333;
 	}
+
 	img[data-src] {
 		filter: blur(.4em);
-	  }
-	   img {
+	}
+
+	img {
 		filter: blur(0em);
 		transition: filter 2s;
-	  }
+	}
+	.events {
+		position: absolute;
+		bottom: 15px;
+		right: 15px;
+		padding: .7em;
+		background-color: rgba(255, 255, 255, 0.76);
+		font-weight: bold;
+		text-align: left;
+	}
+	
 }

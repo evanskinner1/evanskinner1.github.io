@@ -1,6 +1,31 @@
+/*
 var apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=96e53194a6fddf94252efa4fc674c5d6&units=imperial";
 
 
+fetch(apiURL)
+*/
+
+var city = document.getElementById("cityName").innerText;
+var locationId;
+switch (city) {
+    case "Soda Springs":
+        {
+            locationId = "5607916";
+            break;
+        }
+    case "Fish Haven":
+        {
+            locationId = "5585010"
+            break;
+        }
+      
+    default:
+        {
+            locationId = "5604473";
+        }
+}
+    
+var apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=' + locationId + '&APPID=96e53194a6fddf94252efa4fc674c5d6&units=imperial';
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
