@@ -83,12 +83,7 @@ nav {
 	display: block;
 }
 
-body#preston #active {
-	background-color: #455b6d;
-	color: white;
-}
-
-body#gallery #active {
+#active {
 	background-color: #455b6d;
 	color: white;
 }

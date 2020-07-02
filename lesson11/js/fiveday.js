@@ -133,11 +133,17 @@ fetch(apiURL)
         td5.textContent = weekday(day5.dt_txt);
 
         
-        image1.setAttribute("src", imageWeather + day1.weather[0].icon + ".png", 'alt',`weathericon`);
-        image2.setAttribute("src", imageWeather + day2.weather[0].icon + ".png", 'alt',`weathericon`);
-        image3.setAttribute("src", imageWeather + day3.weather[0].icon + ".png", 'alt',`weathericon`);
-        image4.setAttribute("src", imageWeather + day4.weather[0].icon + ".png", 'alt',`weathericon`);
-        image5.setAttribute("src", imageWeather + day5.weather[0].icon + ".png", 'alt',`weathericon`);
+        image1.setAttribute("src", imageWeather + day1.weather[0].icon + ".png");
+        image2.setAttribute("src", imageWeather + day2.weather[0].icon + ".png");
+        image3.setAttribute("src", imageWeather + day3.weather[0].icon + ".png");
+        image4.setAttribute("src", imageWeather + day4.weather[0].icon + ".png");
+        image5.setAttribute("src", imageWeather + day5.weather[0].icon + ".png");
+
+        image1.setAttribute('alt',`weathericon`);
+        image2.setAttribute('alt',`weathericon`);
+        image3.setAttribute('alt',`weathericon`);
+        image4.setAttribute('alt',`weathericon`);
+        image5.setAttribute('alt',`weathericon`);
 
         td6.textContent = Math.round(day1.main.temp_max) + "°F";
         td7.textContent = Math.round(day2.main.temp_max) + "°F";
