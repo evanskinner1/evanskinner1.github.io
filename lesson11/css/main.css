@@ -171,11 +171,13 @@ img {
 	width: 60px;
 }
 
+.wireframe a {
+	color: white;
+}
 /**********EVENTS*************/
 
 .events {
 text-align: left;
-border: solid 2px black;
 }
 
 
@@ -432,5 +434,14 @@ border: solid 2px black;
 		font-weight: bold;
 		text-align: left;
 	}
+
+	#fish-haven .article img {
+		max-width: 300px;
+		height: auto;
+	} 
+	#preston .article img {
+		max-width: 300px;
+		height: 200px;
+	} 
 	
 }
