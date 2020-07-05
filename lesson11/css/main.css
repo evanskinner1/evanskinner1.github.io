@@ -44,12 +44,6 @@ div:not(#banner) {
 	margin: auto;
 }
 
-noscript p {
-	background-color: rgb(221, 61, 61);
-	padding: 1rem;
-	text-align: center;
-	font-weight: bolder;
-}
 
 nav {
 	margin: 0 auto;
@@ -186,11 +180,19 @@ text-align: left;
 /**********BANNER FIXED**********/
 
 #banner {
+	display: none;
 	text-align: center;
 	font-weight: bold;
 	font-size: larger;
 	padding: 20px 20px 20px 20px;
 	background-color: lightblue;
+}
+
+ noscript p {
+	text-align: center;
+	background-color: red;
+	padding: 1rem 1rem 1rem 1rem;
+	font-weight: bold;
 }
 /* Media Query for MEDIUM views */
 @media only screen and (min-width: 500px) {

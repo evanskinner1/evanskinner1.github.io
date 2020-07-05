@@ -237,6 +237,14 @@ textarea {
 .storm .slider {
 	margin-top: 8px;
 }
+#banner {
+	display: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: larger;
+	padding: 20px 20px 20px 20px;
+	background-color: lightblue;
+}
 
 /* Media Query for MEDIUM views */
 @media only screen and (min-width: 500px) {

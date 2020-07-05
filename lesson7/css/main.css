@@ -158,6 +158,14 @@ img[data-src] {
 	filter: blur(0em);
 	transition: filter 1s;
   }
+  #banner {
+	display: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: larger;
+	padding: 20px 20px 20px 20px;
+	background-color: lightblue;
+}
 /* Media Query for MEDIUM views */
 @media only screen and (min-width: 500px) {
 
