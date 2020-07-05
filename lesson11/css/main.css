@@ -165,6 +165,7 @@ img {
 	background-image: linear-gradient(to bottom right, #045ea8, yellow);
 	table-layout: auto;
 	width: 100%;
+	padding: 1rem;
 }
 
 .forcast table img {
